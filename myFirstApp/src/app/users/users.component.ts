@@ -13,7 +13,8 @@ export class UsersComponent implements OnInit {
   constructor(private _userlist: AppuserService) { }
 
   ngOnInit() {
-    this.userList = this._userlist.getUserList();
+    this._userlist.getUserList()
+    .subscribe(data => this.userList = data);
   }
 
 }
