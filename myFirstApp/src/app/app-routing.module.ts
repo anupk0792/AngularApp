@@ -7,9 +7,9 @@ const routes: Routes = [
 {
  path: 'home', component:  HomeComponent
 }
-  ,{
+,{
     path:'users', component: UsersComponent
-  }
+}
 ];
 
 @NgModule({

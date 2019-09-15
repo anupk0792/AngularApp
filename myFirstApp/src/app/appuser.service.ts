@@ -8,7 +8,7 @@ export class AppuserService {
 
   constructor(private _http: HttpClient) { }
   private _url: string = 'https://jsonplaceholder.typicode.com/users';
-
+  
   getHomeMembers(){
     return [
       {
